@@ -1,0 +1,23 @@
+# Ignore everything
+*
+
+# Allow directories (so Git can recurse into them)
+!*/
+
+# Only allow .cs files inside Assets/Scripts/
+!/Assets/
+!/Assets/Scripts/
+!/Assets/Scripts/**/*.cs
+
+# Allow git-related files
+!.gitignore
+!README.md
+!*.md
+!.gitattributes
+
+#Ignore other Git files
+/Library/
+/PluginProject/
+/UnityLocationTest/
+/Assets/ExternalDependencyManager/Editor/CHANGELOG.md
+/Assets/ExternalDependencyManager/Editor/README.md
