@@ -5,6 +5,10 @@ using UnityEngine.UI;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
+/// <summary>
+/// Updates Brightness with Slider
+/// </summary>
+
 public class SliderUpdateBright : MonoBehaviour
 {
     private Volume volume;

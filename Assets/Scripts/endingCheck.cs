@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class endingCheck : MonoBehaviour
-{
-    private globalReferences _globalReferences;
+/// <summary>
+/// Handles the end-game conditions when the player enters a specific trigger area.
+/// </summary>
 
-    // Start is called before the first frame update
+public class EndingCheck : MonoBehaviour
+{
+    private GlobalReferences _globalReferences;
+
     void Start()
     {
-        _globalReferences = GameObject.Find("GlobalReferences").GetComponent<globalReferences>();
+        _globalReferences = GameObject.Find("GlobalReferences").GetComponent<GlobalReferences>();
     }
 
     private void OnTriggerEnter(Collider other)

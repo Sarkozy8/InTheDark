@@ -6,6 +6,10 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// This script manages the behavior of an enemy character (Sirenhead) using Unity's NavMeshAgent for navigation.
+/// </summary>
+
 public class EnemyNavAgent : MonoBehaviour
 {
     private NavMeshAgent agent;
@@ -22,20 +26,18 @@ public class EnemyNavAgent : MonoBehaviour
     [SerializeField] private bool runningState;
     [SerializeField] private bool waitingState;
 
-    private globalReferences _globalReferences;
+    private GlobalReferences _globalReferences;
 
     public AudioSource _audioSourceSiren;
     public AudioClip _audioSirenScream;
 
-    // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
-        _globalReferences = GameObject.Find("GlobalReferences").GetComponent<globalReferences>();
+        _globalReferences = GameObject.Find("GlobalReferences").GetComponent<GlobalReferences>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         // We got to wait until Mision Light Halo gets created so we can spawn Sirenhead

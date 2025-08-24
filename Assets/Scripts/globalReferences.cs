@@ -4,9 +4,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class globalReferences : MonoBehaviour
+/// <summary>
+/// This object holds all the global references needed for the game. This is a singleton.
+/// </summary>
+
+public class GlobalReferences : MonoBehaviour
 {
-    public static globalReferences Instance { get; set; }
+    public static GlobalReferences Instance { get; set; }
 
     public TextMeshProUGUI generatorDisplay;
     public TextMeshProUGUI youAreDeadDisplay;

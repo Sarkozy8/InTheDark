@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This is used for the main menu scene to create a flickering light effect
+/// </summary>
+
+
 public class FlickerLight : MonoBehaviour
 {
     public bool isFlickering = false;

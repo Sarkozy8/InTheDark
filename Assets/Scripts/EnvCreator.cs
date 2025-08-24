@@ -9,6 +9,9 @@ using UnityEngine.UIElements;
 using Unity.AI.Navigation;
 using TMPro;
 
+/// <summary>
+/// This transfer the map from a 2D image into a 3D environment.
+/// </summary>
 public class EnvCreator : MonoBehaviour
 {
     [Header("Normal Prebabs")]
@@ -55,7 +58,7 @@ public class EnvCreator : MonoBehaviour
 
     public TextMeshProUGUI generatorCounterText;
     public GameObject _referenceOfGlobal;
-    private globalReferences _globalReferences;
+    private GlobalReferences _globalReferences;
 
     public Texture2D playerMap;
 
@@ -66,7 +69,7 @@ public class EnvCreator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _globalReferences = _referenceOfGlobal.GetComponent<globalReferences>();
+        _globalReferences = _referenceOfGlobal.GetComponent<GlobalReferences>();
 
         string filePath;
         playerMap = new Texture2D(2, 2);

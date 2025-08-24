@@ -12,6 +12,13 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Unity.VisualScripting;
 
+/// <summary>
+/// Get the map from Google Maps Static API and street view image from Google Street View Static API.
+/// Also, get the device location using GPS.
+/// To ask permission, the plugin I made is used to request enabling GPS on Android devices.
+/// Same way that Google Maps app does.
+/// </summary>
+
 public class Map : MonoBehaviour
 {
     public string apiKey = "AIzaSyCH1gmSeNjU_VRBrxhCYIs33YB17A6xbl0";

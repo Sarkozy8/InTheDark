@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// This is the object that is dropped on the player to allow them to interact with things.
+/// </summary>
+
 public class Interactor : MonoBehaviour
 {
 

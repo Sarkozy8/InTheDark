@@ -1,5 +1,9 @@
 using UnityEngine;
 
+/// <summary>
+/// Testing the new plugin to enable GPS on Android devices.
+/// </summary>
+
 public class TestingPopUp : MonoBehaviour
 {
 

@@ -5,6 +5,11 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
+/// <summary>
+/// Manages brightness and volume settings for the application, 
+/// allowing updates to be persisted across sessions using PlayerPrefs.
+/// </summary>
+
 public class Sliders : MonoBehaviour
 {
     private Volume volume;

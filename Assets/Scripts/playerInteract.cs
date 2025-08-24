@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerInteract : MonoBehaviour, IInteractable
+/// <summary>
+/// Update the dead status of the player when interacted with.
+/// </summary>
+public class PlayerInteract : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _prompt;
     public string InteractionPrompt => _prompt;
-    private globalReferences _globalReferences;
+    private GlobalReferences _globalReferences;
     private void Start()
     {
-        _globalReferences = GameObject.Find("GlobalReferences").GetComponent<globalReferences>();
+        _globalReferences = GameObject.Find("GlobalReferences").GetComponent<GlobalReferences>();
     }
     public bool Interact(Interactor interactor)
     {

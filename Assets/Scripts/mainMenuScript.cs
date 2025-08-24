@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class mainMenuScript : MonoBehaviour
+/// <summary>
+/// Holds all the functions for the main menu
+/// </summary>
+
+public class MainMenuScript : MonoBehaviour
 {
 
     public void PlayGame()

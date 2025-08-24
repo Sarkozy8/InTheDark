@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// This the interactable generator object that the player can activate to power up the exit.
+/// </summary>
 public class generator : MonoBehaviour, IInteractable
 {
     private bool _activated = false;
@@ -10,7 +13,7 @@ public class generator : MonoBehaviour, IInteractable
     [SerializeField] private string _prompt;
     public Light _light;
     public string InteractionPrompt => _prompt;
-    private globalReferences _globalReferences;
+    private GlobalReferences _globalReferences;
     private ParticleSystem _particleSystem;
     private AudioSource _audioSourceGenerator;
     public AudioClip _audioStartup;
@@ -19,7 +22,7 @@ public class generator : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        _globalReferences = GameObject.Find("GlobalReferences").GetComponent<globalReferences>();
+        _globalReferences = GameObject.Find("GlobalReferences").GetComponent<GlobalReferences>();
         _particleSystem = this.GetComponentInChildren<ParticleSystem>();
         _audioSourceGenerator = _gameObjectAudio.GetComponent<AudioSource>();
     }

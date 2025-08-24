@@ -4,14 +4,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+/// <summary>
+/// This script was used for debugging purposes to display the street view image on a canvas.
+/// </summary>
 public class DisplayStreetHouse : MonoBehaviour
 {
 
     private Texture2D StreetViewMap;
     public RawImage RawImageCanvas;
     private bool errorCath;
-
-    // Start is called before the first frame update
     void Start()
     {
         string filePath = $"{UnityEngine.Application.persistentDataPath}/PlayerStreetMap.png";

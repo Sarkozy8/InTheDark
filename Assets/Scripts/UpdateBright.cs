@@ -5,6 +5,10 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
+/// <summary>
+/// Actually updates brightness based on saved PlayerPrefs
+/// </summary>
+
 public class UpdateBright : MonoBehaviour
 {
     private CinemachineVolumeSettings volume;

@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+/// <summary>
+/// Fades out the screen and text after a game over and reloads the main menu.
+/// </summary>
 public class GameOverFadeOut : MonoBehaviour
 {
     public Animator animatorFade;

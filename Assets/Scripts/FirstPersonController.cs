@@ -4,6 +4,10 @@ using UnityEngine.InputSystem;
 #endif
 using Cinemachine;
 
+/// <summary>
+/// This script is based on the Unity's Standard Assets FirstPersonController:
+/// </summary>
+
 
 namespace StarterAssets
 {
@@ -81,7 +85,7 @@ namespace StarterAssets
 
         // ADDONS
         public Animator _animator;
-        private globalReferences _globalReferences;
+        private GlobalReferences _globalReferences;
         public GameObject _referenceOfGlobal;
 
         private bool IsCurrentDeviceMouse
@@ -118,7 +122,7 @@ namespace StarterAssets
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
 
-            _globalReferences = _referenceOfGlobal.GetComponent<globalReferences>();
+            _globalReferences = _referenceOfGlobal.GetComponent<GlobalReferences>();
         }
 
         private void Update()
